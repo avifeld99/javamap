@@ -13,6 +13,9 @@ public class Patient {
     private boolean unKnownVirus;
     private boolean ensured;
 
+    public Patient() {
+    }
+
     public Patient(String nationalRegistryNumber, String fullname, int age, int temperature, boolean unKnownVirus, boolean ensured) {
         this.nationalRegistryNumber = nationalRegistryNumber;
         this.fullname = fullname;

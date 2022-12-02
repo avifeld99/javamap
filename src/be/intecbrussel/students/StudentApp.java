@@ -24,7 +24,7 @@ public class StudentApp {
         System.out.println(students);
         System.out.println(students.get(4));*/
 
-        Map<String, Student> studentMap = new HashMap<>();
+        Map<String, Student> studentMap = new LinkedHashMap<>();
         studentMap.put("Robert", new Student("Robert", "JAVA"));
         studentMap.put("Jaques", new Student("Jaques", "JAVA"));
         studentMap.put("Luc", new Student("Luc", "JAVA"));
@@ -36,11 +36,14 @@ public class StudentApp {
 
         //System.out.println(studentMap.get("Julien"));
 
-        studentMap.forEach((name, student) -> System.out.println(name + " follows " + student.getCourse()));
+        // studentMap.forEach((name, student) -> System.out.println(name + " follows " + student.getCourse()));
+
 
         for (String name : studentMap.keySet()) {
+
             System.out.println(name);
         }
+
         for (Student student : studentMap.values()) {
             System.out.println(student);
         }
@@ -50,5 +53,6 @@ public class StudentApp {
         }
 
         studentMap.replace("ghdfgf", new Student("htfgcf", "hgfy"));
+
     }
 }
