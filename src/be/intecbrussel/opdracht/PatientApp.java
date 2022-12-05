@@ -44,7 +44,7 @@ public class PatientApp {
                 cat1.add(patient);
             } else if (patient.getTemperature() >= 38 && patient.isUnKnownVirus()) {
                 cat2.add(patient);
-            } else if (patient.getTemperature() < 38 && patient.isUnKnownVirus()) {
+            } else if (patient.isUnKnownVirus()) {
                 cat3.add(patient);
             } else {
                 cat4.add(patient);
